@@ -17,18 +17,41 @@ button {
 }
 
 button:hover {
-  background-color: lightgrey;
-  color: black;
+  color: #FE8400;
 }
 
-.col-sm-4 {
+.col-sm-3 {
   border: 3px solid grey;
   border-radius: 20px;
   background-color: #88E6CF;
   margin: 5px;
 }
 
-.col-sm-4:hover {
+.col-sm-3:hover {
   border: 3px solid #FE8400;
   background-color: #FE8400;
+}
+
+
+#label-header-size, #label-header-toppings {
+	display: inline;
+	position: relative;
+	font: 75px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(0,0,255,0.5);
+
+}
+
+
+
+#label-header-size:after {
+	content: "SIZE:";
+	position: absolute; left: 5px; top: 2px;
+	color: rgba(255,0,0,0.5);
+}
+
+#label-header-toppings:after {
+	content: "TOPPINGS:";
+	position: absolute; left: 5px; top: 2px;
+	color: rgba(255,0,0,0.5);
 }
