@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>The Perfect Pizza Place</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>The Perfect Pizza Place</h1>
+        <p class="lead">Create your perfect pizza at The Perfect Pizza Place!</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="pizza-order-form">
+        <div class="form-group">
+          <div class="row">
+            <label for="pizza-size"><h3>Choose Your Size:</h3></label>
+            <select class="form-control" id="pizza-size">
+              <option disabled selected>- Select One -</option>
+              <option value="size-small">Small | 10" | 1-2 people | $7</option>
+              <option value="size-medium">Medium | 14" | 3-4 people | $10</option>
+              <option value="size-large">Large | 18" | 4-6 people | $14</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <h3>Choose Your Toppings:</h3>
+            <div class="col-sm-4">
+              <input type="checkbox" name="toppings" value="Extra Cheese">
+              <label for="toppings-extra-cheese">Extra Cheese</label>
+            </div>
+          <div class="col-sm-4">
+            <input type="checkbox" name="toppings" value="Pepperoni">
+            <label for="toppings-pepperoni">Pepperoni</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="checkbox" name="toppings" value="Sausage">
+            <label for="toppings-sausage">Sausage</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="checkbox" name="toppings" value=" Canadian Bacon">
+            <label for="toppings-canadian-bacon">Canadian Bacon</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="checkbox" name="toppings" value="Artichokes">
+            <label for="toppings-artichokes">Artichokes</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="checkbox" name="toppings" value="Mushrooms">
+            <label for="toppings-mushrooms">Mushrooms</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="checkbox" name="toppings" value="Anchovies">
+            <label for="toppings-anchovies">Anchovies</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="checkbox" name="toppings" value="Olives">
+            <label for="toppings-olives">Olives</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="checkbox" name="toppings" value="Green Peppers">
+            <label for="toppings-green-peppers">Green Peppers</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="checkbox" name="toppings" value="Pineapple">
+            <label for="toppings-pineapple">Pineapple</label>
+          </div>
+        </div>
+        <button type="submit" class="btn-lg">Place Your Order</button>
+        </form>
+
+
+      <div class="row" id="pizza-order">
+        <h2>- Your Order -</h2>
+        <h4>Pizza Size: </h4><p><span class="pizza-size"></span></p>
+        <h4>Pizza Ingredients: </h4><p><span class="pizza-ingredients"></span></p>
+        <h3>Order Total: $ <span class="order-total"></span></h3>
+      </div>
+
+    </div>
+  </body>
+</html>
