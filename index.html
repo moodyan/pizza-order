@@ -19,20 +19,28 @@
       <form id="pizza-order-form">
         <div class="form-group">
           <div class="row">
-            <label for="pizza-size"><h3>Choose Your Size:</h3></label>
-            <select class="form-control" id="pizza-size">
-              <option disabled selected>- Select One -</option>
-              <option value="size-small">Small | 10" | 1-2 people | $7</option>
-              <option value="size-medium">Medium | 14" | 3-4 people | $10</option>
-              <option value="size-large">Large | 18" | 4-6 people | $14</option>
-            </select>
+            <div class="col-sm-6">
+              <label for="pizza-size"><h3>Choose Your Size:</h3></label>
+              <select class="form-control" id="pizza-size">
+                <option disabled selected>- Select One -</option>
+                <option value="size-small">Small | 10" | 1-2 people | $8</option>
+                <option value="size-medium">Medium | 14" | 3-4 people | $12</option>
+                <option value="size-large">Large | 18" | 4-6 people | $16</option>
+                <option value="size-xlarge">Extra-Large | 22" | 6-8 people | $18</option>
+              </select>
+            </div>
           </div>
 
           <div class="row">
-            <h3>Choose Your Toppings:</h3>
+            <div class="col-sm-6">
+              <h3>Choose Your Toppings:</h3>
+              <p><strong>$0.75 each</strong></p>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-sm-4">
               <input type="checkbox" name="toppings" value="Extra Cheese">
-              <label for="toppings-extra-cheese">Extra Cheese</label>
+              <label for="toppings-xcheese">Extra Cheese</label>
             </div>
           <div class="col-sm-4">
             <input type="checkbox" name="toppings" value="Pepperoni">
