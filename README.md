@@ -15,8 +15,8 @@ _Website for a fake pizza company where a user can choose one or more individual
 | The program allows for the user to select pizza size and toppings.  | Large, pepperoni and sausage pizza   | --  |
 | The program returns a detailed description of the pizza the user chose when they click a submit button.  | Large, pepperoni and sausage pizza   | "Your Order: Large, pepperoni and sausage pizza"  |
 | The program changes the price based on the size and how many toppings the user selects and displays it in the order description.  | 2 topping, large pizza  | "Your Order: Large, pepperoni and sausage pizza. Cost: $17.50"  |
-| MAYBE: The program allows for the user to select delivery or pickup. If delivery is selected, the program shows a form for address.  | Click "Delivery"  | Address form is shown  |
-| MAYBE: The program allows for the user to add a second (different) pizza to their order.  | Click "Add Pizza"  | New Pizza Form is shown  |
+| IN PROCESS: The program allows for the user to select delivery or pickup. If delivery is selected, the program shows a form for address.  | Click "Delivery"  | Address form is shown  |
+| IN PROCESS: The program allows for the user to add a second (different) pizza to their order.  | Click "Add Pizza"  | New Pizza Form is shown  |
 
 
 ## Setup/Installation Requirements
@@ -28,7 +28,7 @@ _You may also visit visit https://moodyan.github.io/pizza-order/ to view the web
 
 ## Known Bugs
 
-_No known bugs._
+_Order form submits even when size is not selected. Delivery button, when pushed, should pop up an address form. Not finished: Add second pizza option._
 
 ## Support and contact details
 
