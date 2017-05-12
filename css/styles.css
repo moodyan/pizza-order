@@ -25,6 +25,7 @@ button {
 
 button:hover {
   color: #FE8400;
+  border: 2px solid #FE8400;
 }
 
 .col-sm-3 {
@@ -45,23 +46,35 @@ button:hover {
 	font: 75px Helvetica, Sans-Serif;
 	letter-spacing: -5px;
 	color: rgba(0,0,255,0.5);
+}
 
+#label-header-order {
+	display: inline;
+	position: relative;
+	font: 75px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(0,0,255,0.5);
 }
 
 #label-header-size:after {
 	content: "SIZE:";
-	position: absolute; left: 5px; top: 2px;
+	position: absolute; left: 4px; top: 2px;
 	color: rgba(255,0,0,0.5);
 }
 
 #label-header-toppings:after {
 	content: "TOPPINGS:";
-	position: absolute; left: 5px; top: 2px;
+	position: absolute; left: 4px; top: 2px;
 	color: rgba(255,0,0,0.5);
 }
 
-img {
+#label-header-order:after {
+	content: "DETAILS";
+	position: absolute; left: 4px; top: 2px;
+	color: rgba(255,0,0,0.5);
+}
+
+/*img {
   position: absolute;
   transform: translate(-50%, -50%);
-
-}
+}*/

@@ -5,14 +5,14 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <img class="pizza-cursor" src="img/pizza.png" alt="HTML5 Icon" style="width:25px;height:20px;">
+    <!-- <img class="pizza-cursor" src="img/pizza.png" alt="HTML5 Icon" style="width:25px;height:20px;"> -->
     <title>That Perfect Pizza Place</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
         <h1>That Perfect Pizza Place</h1>
-        <p class="lead">Create your perfect pizza at That Perfect Pizza Place!</p>
+        <p class="lead">Create your perfect pizza here!</p>
       </div>
     </div>
 
@@ -92,13 +92,24 @@
           <button type="submit" class="btn-lg">Place Your Order</button>
         </div>
       </form>
+    </div>
+    <div class="container">
+      <div id="pizza-order">
+        <div class="row">
+          <h2 id="label-header-order">DETAILS</h2>
+        </div>
+        <div class="row">
+          <h3>Pizza Size: </h3><p><span class="pizza-size-input"></span></p>
+          <h3>Pizza Toppings: </h3><p><span class="pizza-toppings-input"></span></p>
+          <h2>Order Total: $<span class="order-total"></span></h2>
 
+          <button type="click" class="btn-lg">Add another pizza!</button>
 
-      <div class="row" id="pizza-order">
-        <h2>- Your Order -</h2>
-        <h4>Pizza Size: </h4><p><span class="pizza-size-input"></span></p>
-        <h4>Pizza Toppings: </h4><p><span class="pizza-toppings-input"></span></p>
-        <h3>Order Total: $<span class="order-total"></span></h3>
+          <!-- <div class="row">
+            <div id="pizza-order-output">
+            </div>
+          </div> -->
+        </div>
       </div>
 
     </div>
