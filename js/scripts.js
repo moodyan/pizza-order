@@ -33,6 +33,10 @@ Pizza.prototype.calculatePrice = function() {
 // USER INTERFACE
 
 $(document).ready(function() {
+  $(document).mousemove(function(e){
+      $(".pizza-cursor").css({left:e.pageX, top:e.pageY});
+  });
+
   $("form#pizza-order-form").submit(function(event) {
     event.preventDefault();
 

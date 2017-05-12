@@ -11,6 +11,13 @@ body {
   background-color: #F7CE3E;
 }
 
+.row p {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 button {
   background-color: #1A2930;
   color: white;
@@ -32,7 +39,6 @@ button:hover {
   background-color: #FE8400;
 }
 
-
 #label-header-size, #label-header-toppings {
 	display: inline;
 	position: relative;
@@ -41,8 +47,6 @@ button:hover {
 	color: rgba(0,0,255,0.5);
 
 }
-
-
 
 #label-header-size:after {
 	content: "SIZE:";
@@ -54,4 +58,10 @@ button:hover {
 	content: "TOPPINGS:";
 	position: absolute; left: 5px; top: 2px;
 	color: rgba(255,0,0,0.5);
+}
+
+img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+
 }
