@@ -19,13 +19,13 @@ Pizza.prototype.calculatePrice = function() {
     price += 18;
   }
 
-  // if (this.pizzaIngredients.length === 0) {
-  //   price *= 1;
-  // } else {
-  //   price += this.pizzaIngredients.length;
-  // }
-
-  return price;
+  if (this.pizzaIngredients.length === 0) {
+    price *= 1;
+  } else {
+    price += (this.pizzaIngredients.length * .75);
+  }
+  var total = price.toFixed(2);
+  return total;
 };
 
 
@@ -35,14 +35,15 @@ $(document).ready(function() {
   $("form#pizza-order-form").submit(function(event) {
     event.preventDefault();
 
-    var newPizza = new Pizza();
+    var pizzaSizeInput = $("select#pizza-size").val();
+    var newPizza = new Pizza(pizzaSizeInput);
 
     $.each($("input[name='toppings']:checked"), function() {
       newPizza.pizzaIngredients.push($(this).val());
     });
 
     var pizzaPrice = newPizza.calculatePrice()
-    var pizzaSizeInput = $("select#pizza-size").val();
+
 
     $(".pizza-size").text(pizzaSizeInput);
     $(".pizza-ingredients").text(newPizza.pizzaIngredients);
