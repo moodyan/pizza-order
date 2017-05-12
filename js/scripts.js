@@ -21,6 +21,7 @@ Pizza.prototype.calculatePrice = function() {
 
   if (this.pizzaIngredients.length === 0) {
     price *= 1;
+    this.pizzaIngredients.push(" Plain")
   } else {
     price += (this.pizzaIngredients.length * .75);
   }
@@ -45,8 +46,8 @@ $(document).ready(function() {
     var pizzaPrice = newPizza.calculatePrice()
 
 
-    $(".pizza-size").text(pizzaSizeInput);
-    $(".pizza-ingredients").text(newPizza.pizzaIngredients);
+    $(".pizza-size-input").text(pizzaSizeInput);
+    $(".pizza-toppings-input").text(newPizza.pizzaIngredients);
     $(".order-total").text(pizzaPrice);
 
     $("#pizza-order").show();
