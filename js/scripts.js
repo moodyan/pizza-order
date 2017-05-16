@@ -48,7 +48,7 @@ $(document).ready(function() {
     var pizzaSizeInput = $("select#pizza-size").val();
     var newPizza = new Pizza(pizzaSizeInput);
 
-    $.each($("input[name='toppings']:checked"), function() {
+    $("input[name='toppings']:checked").each(function() {
       newPizza.pizzaIngredients.push($(this).val());
     });
 
